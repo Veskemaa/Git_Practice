@@ -9,4 +9,4 @@ group_means <- tBHQ_data %>%
 ggplot() + geom_point(data=tBHQ_data, aes(x=as.numeric(TREATMENT), y=pO2)) +
   geom_segment(aes(x=as.numeric(TREATMENT)-0.2, xend=as.numeric(TREATMENT)+0.2, y=mean, yend=mean), 
                    data=group_means, colour="black") + theme(axis.text.x=element_blank())
- #git practise
+ #git practice session
